@@ -1,0 +1,36 @@
+{
+  "entries": [
+    {
+      "version": "1.0.0",
+      "date": "March 2026",
+      "sections": {
+        "✨ New Features": [
+          "Friends panel with drag & drop reorder in Sentence Builder",
+          "OpenRouter AI integration — Gemini 3 Flash Preview",
+          "Auto-updater — app updates itself automatically",
+          "Notification bell with persistent panel position memory",
+          "Writing mode: AI checks synonyms and paraphrases",
+          "LAN multiplayer with offline outbox (messages delivered when online)",
+          "Dark scrollbar in Friends panel",
+          "Sentence builder: click to add, click to remove, hold to reorder"
+        ],
+        "🐛 Bug Fixes": [
+          "Fixed tooltip freezing on screen after navigation",
+          "Fixed Friends button not appearing after login",
+          "Fixed audio time.sleep NameError",
+          "Fixed Mistakes view showing empty sentence exercises",
+          "Fixed OpenRouter 401 authentication header",
+          "Fixed calendar streak not recording on partial XP days",
+          "Fixed HoverTooltip not hiding on window minimize"
+        ],
+        "⚡ Improvements": [
+          "Pinyin accepted without tone marks in Mistakes (ni hao = nǐ hǎo)",
+          "Writing input redesigned with blue glow on focus",
+          "Success overlay waits for audio to finish before advancing",
+          "Friends panel no longer causes main window flicker",
+          "Sentence builder gap indicator shows drop position while dragging"
+        ]
+      }
+    }
+  ]
+}

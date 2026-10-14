@@ -1,0 +1,35 @@
+# Private configuration and runtime data
+.env
+.env.*
+!.env.template
+!.env.example
+users/
+website/
+audio_cache/
+session.json
+leaderboard.json
+*.log
+*.tmp
+
+# Generated binaries and caches
+build/
+dist/
+release/
+*.exe
+*.zip
+__pycache__/
+*.py[cod]
+*.bak*
+.venv/
+venv/
+
+# Local tooling and editor state
+.idea/
+.vscode/
+.claude/
+.codex/
+.agents/
+_plan.json
+
+# Disposable regression-test storage
+hanziflow-test-*/
