@@ -68,4 +68,4 @@ Local changelog metadata is used when updates are disabled, so the changelog scr
 
 The local `.venv` is a development/runtime environment and is excluded from source publication. Temporary regression-test directories are also excluded. There is no website source, backend, or deployment configuration in this repository.
 
-See [SECURITY.md](SECURITY.md) for the reviewed findings and limitations. The application's live UI, hardware audio, multiplayer, and rebuilt executable have not been verified as part of this source cleanup.
+The application's live UI, hardware audio, multiplayer, and rebuilt executable have not been verified as part of this source cleanup.

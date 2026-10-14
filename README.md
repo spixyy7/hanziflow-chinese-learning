@@ -61,7 +61,6 @@ scripts/check_public.py Source publication checks
 tests/test_security.py  Isolated security regressions and sound-generation checks
 build_exe.py             Optional Windows EXE builder
 ARCHITECTURE.md          Components, data flow, and trust boundaries
-SECURITY.md              Cleanup, security findings, and verification limits
 LICENSE                  MIT license for this project's code
 ```
 
@@ -89,7 +88,7 @@ Local validation: **13 tests passed**, including password handling, filename val
 - Multiple application instances and all Tkinter thread callbacks have not been fully audited.
 - Some exercises depend on provider responses, network availability, and API model support.
 
-See [SECURITY.md](SECURITY.md) for details. This repository is provided as-is; future fixes or support are not promised.
+This repository is provided as-is; future fixes or support are not promised.
 
 ## Optional Windows build
 
@@ -99,17 +98,6 @@ See [SECURITY.md](SECURITY.md) for details. This repository is provided as-is; f
 ```
 
 The builder deletes previous `build/` and `dist/` outputs. It includes public metadata and the license, not `.env`, users, or cached pronunciation audio. Configure your own external `.env` beside the EXE. No new executable was built or distributed during the cleanup.
-
-## Publish to a new GitHub repository
-
-The prepared script creates a **public** repository named `hanziflow-chinese-learning` under your verified GitHub account. It runs the checks, stages only the reviewed source, uses a GitHub noreply author address, commits, and pushes. It does not upload a website or a binary release.
-
-```powershell
-gh auth login
-powershell -ExecutionPolicy Bypass -File .\scripts\publish_github.ps1
-```
-
-Run this in your own terminal with network access and Git metadata write access. The preparation session could not create the GitHub repository or push because network access and writes to `.git` were restricted. GitHub publication is not yet verified. The script also removes empty scratch folders left by an earlier test setup attempt, which the restricted session could not delete.
 
 ## License
 
