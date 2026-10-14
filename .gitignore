@@ -1,7 +1,6 @@
 # Private configuration and runtime data
 .env
 .env.*
-!.env.template
 !.env.example
 users/
 website/

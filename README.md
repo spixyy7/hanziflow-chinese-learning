@@ -31,7 +31,7 @@ If a working `.venv` already exists, use the last command. Create your own local
 
 ## Optional configuration
 
-Both `.env.example` and `.env.template` contain empty credential fields and safe example settings. Copy either file to `.env` and enter your own credentials locally:
+`.env.example` contains empty credential fields and safe example settings. Copy it to `.env` and enter your own credentials locally:
 
 ```powershell
 Copy-Item .env.example .env

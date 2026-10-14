@@ -39,7 +39,7 @@ def check(root=ROOT):
                 continue
             if (
                 name in PRIVATE_FILES or name == ".env"
-                or (name.startswith(".env.") and name not in {".env.template", ".env.example"})
+                or (name.startswith(".env.") and name not in {".env.example"})
                 or path.suffix.lower() in {".log", ".pyc", ".pyo", ".exe", ".zip", ".tmp"}
                 or ".bak" in name
             ):
@@ -54,7 +54,7 @@ def check(root=ROOT):
                     ast.parse(content.decode("utf-8-sig"), filename=str(relative))
                 except (SyntaxError, UnicodeError):
                     issues.append((relative, "invalid Python syntax/encoding"))
-            if name in {".env.template", ".env.example"}:
+            if name in {".env.example"}:
                 for line in content.decode("utf-8-sig").splitlines():
                     if line.strip().startswith("#") or "=" not in line:
                         continue
